@@ -1,0 +1,86 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: rgb(255, 242, 242);
+  color: rgb(32, 64, 86);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.1875rem;
+}
+
+h3 {
+  font-size: 0.875;
+  font-weight: bold;
+}
+
+h4 {
+  display: inline;
+}
+
+p {
+  color: rgb(74, 74, 74);
+  font-size: 0.875rem;
+}
+
+.container {
+  padding-top: 5.25rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12.5rem;
+  border: 4px solid white;
+  border-radius: 8px;
+  background-color: rgb(32, 64, 86);
+  color: rgb(32, 64, 86);
+  font-size: 7rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.card span {
+  color: rgb(255, 255, 255);
+  display: none;
+  font-size: 7rem;
+  font-weight: 900;
+}
+
+.selected {
+  background: orange;
+}
+
+.match {
+  background: green;
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    overflow-y: scroll;
+  }
+  body {
+    margin-top: -2rem;
+    overflow-y: scroll;
+  }
+  .container {
+    padding-top: 0rem;
+    overflow-y: scroll;
+    max-height: 600px;
+  }
+  .card {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  .row {
+    margin-top: 3rem;
+    justify-content: center;
+    overflow-y: scroll;
+  }
+}
