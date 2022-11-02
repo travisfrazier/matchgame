@@ -94,10 +94,9 @@ grid.addEventListener('click', function(event) {
         // run the match function
         match();
       } else {
-        setTimeout(reset, 800);
+        setTimeout(reset, 500);
       }
       previousTarget = clicked;
-      console.log(previousTarget);
     }
   }
 });
